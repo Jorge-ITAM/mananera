@@ -1,4 +1,4 @@
-# mananera
+# Mañanera
 ¡Un archivo para webscraping de las mañaneras!
 
 Este proyecto usa el API de YouTube para hacer webscraping de las conferencias matutinas (“mañaneras”) de Claudia Sheinbaum, recolectando datos de cada semana.
