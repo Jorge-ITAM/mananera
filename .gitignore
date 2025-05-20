@@ -177,3 +177,5 @@ cython_debug/
 .env
 #data/*.csv
 data/*.json
+
+.gitignore
