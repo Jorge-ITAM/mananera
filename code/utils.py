@@ -51,3 +51,10 @@ def get_comments(youtube, video_id, max_comments=1000):
                 "author_name": snippet.get("authorDisplayName", "NA"),
                 "comment_text": snippet.get("textDisplay", "NA"),
                 "published_at": snippet.get("publishedAt", "NA")
+            })
+
+        next_page_token = response.get("nextPageToken")
+        if not next_page_token:
+            break
+
+    return comments

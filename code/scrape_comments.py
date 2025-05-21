@@ -24,4 +24,3 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(all_comments)
     df.to_csv("../data/comments.csv", index=False)
-    print("✅ Comentarios guardados correctamente.")
