@@ -47,7 +47,9 @@ def get_comments(youtube, video_id, max_comments=1000):
             comments.append({
                 "video_id": video_id,
                 "comment_id": item["id"],
-                "author_id": snippet.get("authorChannelId", {}).get("value", "NA"),
+                "author_id": snippet.get(
+                    "authorChannelId", {}
+                ).get("value", "NA"),
                 "author_name": snippet.get("authorDisplayName", "NA"),
                 "comment_text": snippet.get("textDisplay", "NA"),
                 "published_at": snippet.get("publishedAt", "NA")

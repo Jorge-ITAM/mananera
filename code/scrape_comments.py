@@ -1,15 +1,14 @@
 import os
 import pandas as pd
 from dotenv import load_dotenv
-from googleapiclient.discovery import build
 from utils import init_youtube, get_mananera_info, get_comments
-#Cargar datos necesarios
+# Cargar datos necesarios
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 CHANNEL_ID = "UCvzHrtf9by1-UY67SfZse8w"
-#Inicializar API
+# Inicializar API
 youtube = init_youtube(API_KEY)
-#Webscraping
+# Webscraping
 if __name__ == "__main__":
     video_info_list = get_mananera_info(youtube, CHANNEL_ID, max_results=5)
 
