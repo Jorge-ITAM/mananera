@@ -13,12 +13,19 @@ Analizar si las personas que comentan e interactúan con los videos se mantienen
 
 A futuro, estos resultados también podrían utilizarse para estudiar **sentimiento**, dependiendo del tipo de audiencia y comentarios.
 
+## ¿Qué hace el proyecto?
+
+- Conecta la API con YouTube
+- Busca las últimas 5 mañaneras (1 semana)
+- Descarga hasta 200 comentarios por video
+- Almacena los resultados
+
 ## ⚙️ ¿Cómo usarlo?
 
 1. Clona el repositorio
 2. Crea tu archivo .env con tu clave API de YouTube
 YOUTUBE_API_KEY=tu_clave_aqui
-3. Instala los paquetes necesarios desde requirements.txt
+3. Instala los paquetes necesarios desde requirements.txt, activa tu entorno virtual
 4. Ejecuta el script
 
 📦 Salida esperada
